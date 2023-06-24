@@ -389,12 +389,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   position: relative;
   padding: auto;
-  padding-left: 70px;
+  padding-left: 80px;
 }
 
 .project-carousel-image {
   width: 70%;
-  height: 550px;
+  height: 500px;
 }
 
 .project p {
@@ -652,7 +652,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  width: 40px;
+  height: 40px;
   margin-top: 20px;
 }
 .footer p {

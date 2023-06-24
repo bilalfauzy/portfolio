@@ -114,6 +114,7 @@ export const Projects = () => {
                       <p>Merupakan aplikasi yang berfungsi untuk melakukan reservasi dokter gigi pada suatu klinik gigi. Fitur utama aplikasi yaitu login, register, pembuatan reservasi oleh user, pembayaran. Fitur login register menggunakan firebase authentication. Fitur pembayaran menggunakan layanan midtrans sandbox. Pada aplikasi juga terdapat user admin. Admin memiliki tugas untuk menambah, mengupdate, menghapus data dokter dan jadwal, dan juga melakukan konfirmasi reservasi pasien. Aplikasi ini merupakan tugas capstone saya pada semester 6.</p>
                       <p>Teknologi yang digunakan:</p>
                       <p>Bahasa: Kotlin <br/>Framework: Jetpack Compose <br/>Autentikasi: Firebase Authentication <br/>Payment gateway: Midtrans <br/>Database: Firebase Firestore</p>
+                      <a href="https://github.com/bilalfauzy/DentistReservation" target='_blank'><p>Link project</p></a>
                       <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme project-slider" autoPlay ={true} rewind={true}>
                         {dentistApp.map((image, index) => (
                           <div key={index}>
@@ -127,6 +128,7 @@ export const Projects = () => {
                       <p>Merupakan aplikasi yang berfungsi untuk melakukan enkripsi teks atau gambar menjadi chiper menggunakan algoritma AES. Fungsi login dan register menggunakan firebase authentication. Data pada aplikasi disimpan pada firebase firestore.</p>
                       <p>Teknologi yang digunakan:</p>
                       <p>Bahasa: Kotlin <br/>Framework: Jetpack Compose <br/>Autentikasi: Firebase Authentication <br/>Database: Firebase Firestore</p>
+                      <a href="https://github.com/bilalfauzy/AESEncryption" target='_blank'><p>Link project</p></a>
                       <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme project-slider" autoPlay ={true} rewind={true}>
                         {enkripAppimg.map((image, index) => (
                           <div key={index}>
@@ -141,6 +143,7 @@ export const Projects = () => {
                       <p>Merupakan aplikasi aplikasi untuk mengelola surat masuk dan surat keluar, terdapat 2 halaman yaitu surat masuk dan surat keluar. Data surat didapatkan dari dari database MySql menggunakan rest API.</p>
                       <p>Teknologi yang digunakan:</p>
                       <p>Bahasa: Java <br/>Rest client: Retrofit <br/>Rest server: Codeigniter 3 <br/>Database: MySql</p>
+                      <a href="https://github.com/bilalfauzy/LaporanMasyarakat" target='_blank'><p>Link project</p></a>
                       <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme project-slider" autoPlay ={true} rewind={true}>
                         {suratAppimg.map((image, index) => (
                           <div key={index}>
@@ -156,7 +159,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt='img'></img>
     </section>
   )
 }

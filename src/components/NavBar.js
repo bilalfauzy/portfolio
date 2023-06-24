@@ -41,12 +41,13 @@ export const NavBar = () => {
             <Nav className="me-auto">
                 <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
                 <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
+                <Nav.Link href="#sertifikasi" className={activeLink === 'sertifikasi' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('sertifikasi')}>Sertifikasi</Nav.Link>
                 <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/bilal-nurul-fauzi-3379471a0/?originalSubdomain=id"><img src={navIcon1} alt=""/></a>
-                    <a href="https://www.instagram.com/bilalfauzy/"><img src={navIcon3} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/bilal-nurul-fauzi-3379471a0/?originalSubdomain=id" target="_blank"><img src={navIcon1} alt=""/></a>
+                    <a href="https://www.instagram.com/bilalfauzy/" target="_blank"><img src={navIcon3} alt=""/></a>
                 </div>
             </span>
             </Navbar.Collapse>
