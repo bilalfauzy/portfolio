@@ -291,7 +291,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   height: 400px;
   width: 300px;
-  margin-left: 80px;
   animation: updown 3s linear infinite;
 }
 
@@ -344,7 +343,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -404,8 +403,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
   text-align: justify;
 }
 .project .nav.nav-pills {
