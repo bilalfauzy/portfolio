@@ -18,6 +18,14 @@ import enkGambar from "../assets/img/enkripgambar.jpeg"
 import listEnk from "../assets/img/listenkrip.jpeg"
 import listRes from "../assets/img/listres.jpg"
 
+import adminHome from "../assets/img/admin.jpg"
+import tambahDok from "../assets/img/tambahdok.png"
+import tambahJad from "../assets/img/tambahjad.jpg"
+import listDok from "../assets/img/listdok.jpg"
+import detailDok from "../assets/img/detaildok.jpg"
+import detailJad from "../assets/img/detailjad.jpg"
+import historyRes from "../assets/img/historyres.jpg"
+
 import loginSis from "../assets/img/loginsis.png"
 import regisSis from "../assets/img/regissis.png"
 import homeSis from "../assets/img/homesis.png"
@@ -44,7 +52,14 @@ export const Projects = () => {
     bayar2,
     listRes,
     detailRes,
-    profile
+    profile,
+    adminHome,
+    tambahDok,
+    tambahJad,
+    listDok,
+    detailDok,
+    detailJad,
+    historyRes
   ]
 
   const enkripAppimg = [
