@@ -1,11 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0b25fbbe.css",
-    "main.js": "/portfolio/static/js/main.17d9538d.js",
+    "main.css": "/portfolio/static/css/main.8dcbc478.css",
+    "main.js": "/portfolio/static/js/main.7f334945.js",
     "static/js/787.128fc6e9.chunk.js": "/portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/sfa_mvisit.png": "/portfolio/static/media/sfa_mvisit.dc2a1a63a969a2a0099f.png",
+    "static/media/sertifikat_cloud_aws.pdf": "/portfolio/static/media/sertifikat_cloud_aws.d49fc67ffa59f50d5e9a.pdf",
+    "static/media/sertifikat kursus kotlin-1.pdf": "/portfolio/static/media/sertifikat kursus kotlin-1.cafddcffc7b4f3c68c63.pdf",
+    "static/media/sertifikat kursus javascript.pdf": "/portfolio/static/media/sertifikat kursus javascript.bf758bb107b58d65d926.pdf",
+    "static/media/sertifikat kursus backend-1.pdf": "/portfolio/static/media/sertifikat kursus backend-1.3469db424c961364aec6.pdf",
+    "static/media/sertifikat kursus android-1.pdf": "/portfolio/static/media/sertifikat kursus android-1.782c5d3447098b1e0457.pdf",
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/new_profile.jpeg": "/portfolio/static/media/new_profile.4fa6b9e44a6d49c60e83.jpeg",
     "static/media/sfa_report.png": "/portfolio/static/media/sfa_report.835d144fad3253a53d7e.png",
     "static/media/mes_stpage.png": "/portfolio/static/media/mes_stpage.77f9aced91058a5ae1f1.png",
     "static/media/sertandroid.png": "/portfolio/static/media/sertandroid.a2e9f99682e0b54b78f6.png",
@@ -17,7 +23,6 @@
     "static/media/sfa_login.jpeg": "/portfolio/static/media/sfa_login.f4a53279c715e0d1146c.jpeg",
     "static/media/sfa_mformvisit.jpeg": "/portfolio/static/media/sfa_mformvisit.702a95ec32301aec6b4e.jpeg",
     "static/media/sfa_visit.png": "/portfolio/static/media/sfa_visit.8513abc8f0d3bb49d566.png",
-    "static/media/bilal.jpg": "/portfolio/static/media/bilal.7936ac6dc04de98dc87d.jpg",
     "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -52,12 +57,12 @@
     "static/media/star_white.svg": "/portfolio/static/media/star_white.b4ea9caeb1612790036ed415bddc8b3c.svg",
     "static/media/callimg.svg": "/portfolio/static/media/callimg.082feaf1e5555effa3591e166814e095.svg",
     "static/media/emailimg.svg": "/portfolio/static/media/emailimg.c9c510adf03b5461490e0f6bea855a16.svg",
-    "main.0b25fbbe.css.map": "/portfolio/static/css/main.0b25fbbe.css.map",
-    "main.17d9538d.js.map": "/portfolio/static/js/main.17d9538d.js.map",
+    "main.8dcbc478.css.map": "/portfolio/static/css/main.8dcbc478.css.map",
+    "main.7f334945.js.map": "/portfolio/static/js/main.7f334945.js.map",
     "787.128fc6e9.chunk.js.map": "/portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b25fbbe.css",
-    "static/js/main.17d9538d.js"
+    "static/css/main.8dcbc478.css",
+    "static/js/main.7f334945.js"
   ]
 }
