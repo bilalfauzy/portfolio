@@ -1,104 +1,32 @@
-import React from 'react'
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import homeUser from "../assets/img/home.jpg"
-import pilihTgl from "../assets/img/pilihtgl.jpg"
-import bayar from "../assets/img/bayar1.jpg"
-import bayar2 from "../assets/img/bayar2.jpg"
-import loginPage from "../assets/img/login.jpg"
-import regis from "../assets/img/regis.jpg"
-import midtrans1 from "../assets/img/midtrans1.jpg"
-import midtrans2 from "../assets/img/midtrans2.jpg"
-import profile from "../assets/img/profile.jpg"
-import detailRes from "../assets/img/detailres.jpg"
-import loginEnkrip from "../assets/img/login.jpeg"
-import regisEnk from "../assets/img/regis.jpeg"
-import homeEnk from "../assets/img/home.jpeg"
-import enkTeks from "../assets/img/enkripteks.jpeg"
-import enkGambar from "../assets/img/enkripgambar.jpeg"
-import listEnk from "../assets/img/listenkrip.jpeg"
-import listRes from "../assets/img/listres.jpg"
-
-import adminHome from "../assets/img/admin.jpg"
-import tambahDok from "../assets/img/tambahdok.png"
-import tambahJad from "../assets/img/tambahjad.jpg"
-import listDok from "../assets/img/listdok1.jpg"
-import detailDok from "../assets/img/detaildok.jpg"
-import detailJad from "../assets/img/detailjad.jpg"
-import historyRes from "../assets/img/historyres.jpg"
-
-import loginSis from "../assets/img/loginsis.png"
-import regisSis from "../assets/img/regissis.png"
-import homeSis from "../assets/img/homesis.png"
-import suratMas from "../assets/img/suratmasuk.png"
-import suratKel from "../assets/img/suratkeluar.png"
-
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
-import Carousel from 'react-multi-carousel';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import Carousel from "react-multi-carousel";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import { projectsData } from "./projectsData";
 
-
-export const Projects = () => {
-
-  const dentistApp = [
-    loginPage,
-    regis,
-    homeUser,
-    pilihTgl,
-    bayar,
-    midtrans1,
-    midtrans2,
-    bayar2,
-    listRes,
-    detailRes,
-    profile,
-    adminHome,
-    tambahDok,
-    tambahJad,
-    listDok,
-    detailDok,
-    detailJad,
-    historyRes
-  ]
-
-  const enkripAppimg = [
-    loginEnkrip,
-    regisEnk,
-    homeEnk,
-    enkTeks,
-    enkGambar,
-    listEnk
-  ]
-
-  const suratAppimg = [
-    loginSis,
-    regisSis,
-    homeSis,
-    suratMas,
-    suratKel
-  ]
-
+export const Projects = ({ onProjectClick }) => {
+  // Konfigurasi responsif carousel auto-play
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 2
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
+      breakpoint: { max: 1024, min: 600 },
+      items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      breakpoint: { max: 600, min: 0 },
+      items: 1,
+    },
   };
-
 
   return (
     <section className="project" id="projects">
@@ -106,75 +34,66 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <br/><br/>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Project 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Project 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Project 3</Nav.Link>
-                    </Nav.Item>
-                
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                    <p>Aplikasi Reservasi Dokter Gigi berbasis Mobile</p>
-                      <p>Merupakan aplikasi yang berfungsi untuk melakukan reservasi dokter gigi pada suatu klinik gigi. Fitur utama aplikasi yaitu login, register, pembuatan reservasi oleh user, pembayaran. Fitur login register menggunakan firebase authentication. Fitur pembayaran menggunakan layanan midtrans sandbox. Pada aplikasi juga terdapat user admin. Admin memiliki tugas untuk menambah, mengupdate, menghapus data dokter dan jadwal, dan juga melakukan konfirmasi reservasi pasien. Aplikasi ini merupakan tugas capstone saya pada semester 6.</p>
-                      <p>Teknologi yang digunakan:</p>
-                      <p>Bahasa: Kotlin <br/>Framework: Jetpack Compose <br/>Autentikasi: Firebase Authentication <br/>Payment gateway: Midtrans <br/>Database: Firebase Firestore</p>
-                      <a href="https://github.com/bilalfauzy/DentistReservation" target='_blank'><p>Link project</p></a>
-                      <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme project-slider" autoPlay ={true} rewind={true}>
-                        {dentistApp.map((image, index) => (
-                          <div key={index}>
-                          <img src={image} alt={`carousel-${index}`} className="project-carousel-image" />
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p className="project-intro">
+                    Beberapa proyek yang pernah saya kerjakan sebagai fullstack &amp; mobile
+                    developer. Klik kartu untuk melihat detail lengkapnya.
+                  </p>
+                  <Carousel
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={2500}
+                    transitionDuration={600}
+                    keyBoardControl={true}
+                    pauseOnHover={true}
+                    removeArrowOnDeviceType={["mobile"]}
+                    className="project-cards-slider"
+                    itemClass="project-card-item"
+                  >
+                    {projectsData.map((project) => (
+                      <article
+                        key={project.id}
+                        className="project-card"
+                        onClick={() => onProjectClick(project.id)}
+                        role="button"
+                        tabIndex={0}
+                        aria-label={`Lihat detail proyek ${project.title}`}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            onProjectClick(project.id);
+                          }
+                        }}
+                      >
+                        <div className="project-card__media">
+                          <img src={project.cover} alt={project.title} />
+                          <span className="project-card__category">{project.category}</span>
+                        </div>
+                        <div className="project-card__body">
+                          <h4 className="project-card__title">{project.title}</h4>
+                          <p className="project-card__desc">{project.shortDesc}</p>
+                          <div className="project-card__tags">
+                            {project.techStack.slice(0, 3).map((tech) => (
+                              <span key={tech} className="tech-badge">
+                                {tech}
+                              </span>
+                            ))}
                           </div>
-                        ))}
-                      </Carousel>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <p>Aplikasi Enkripsi berbasis Mobile menggunakan Algoritma AES</p>
-                      <p>Merupakan aplikasi yang berfungsi untuk melakukan enkripsi teks atau gambar menjadi chiper menggunakan algoritma AES. Fungsi login dan register menggunakan firebase authentication. Data pada aplikasi disimpan pada firebase firestore.</p>
-                      <p>Teknologi yang digunakan:</p>
-                      <p>Bahasa: Kotlin <br/>Framework: Jetpack Compose <br/>Autentikasi: Firebase Authentication <br/>Database: Firebase Firestore</p>
-                      <a href="https://github.com/bilalfauzy/AESEncryption" target='_blank'><p>Link project</p></a>
-                      <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme project-slider" autoPlay ={true} rewind={true}>
-                        {enkripAppimg.map((image, index) => (
-                          <div key={index}>
-                          <img src={image} alt={`carousel-${index}`} className="project-carousel-image" />
-                          </div>
-                        ))}
-                      </Carousel>
-
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                    <p>Aplikasi Surat Masuk Surat Keluar berbasis Mobile</p>
-                      <p>Merupakan aplikasi aplikasi untuk mengelola surat masuk dan surat keluar, terdapat 2 halaman yaitu surat masuk dan surat keluar. Data surat didapatkan dari dari database MySql menggunakan rest API.</p>
-                      <p>Teknologi yang digunakan:</p>
-                      <p>Bahasa: Java <br/>Rest client: Retrofit <br/>Rest server: Codeigniter 3 <br/>Database: MySql</p>
-                      <a href="https://github.com/bilalfauzy/LaporanMasyarakat" target='_blank'><p>Link project</p></a>
-                      <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme project-slider" autoPlay ={true} rewind={true}>
-                        {suratAppimg.map((image, index) => (
-                          <div key={index}>
-                          <img src={image} alt={`carousel-${index}`} className="project-carousel-image" />
-                          </div>
-                        ))}
-                      </Carousel>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                          <span className="project-card__cta">Lihat Detail &rarr;</span>
+                        </div>
+                      </article>
+                    ))}
+                  </Carousel>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt='img'></img>
+      <img className="background-image-right" src={colorSharp2} alt="img" />
     </section>
-  )
-}
+  );
+};

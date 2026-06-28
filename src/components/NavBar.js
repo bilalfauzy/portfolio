@@ -6,7 +6,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
-export const NavBar = () => {
+export const NavBar = ({ theme, toggleTheme }) => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -57,6 +57,15 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
+              href="#experience"
+              className={
+                activeLink === "experience" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("experience")}
+            >
+              Experience
+            </Nav.Link>
+            <Nav.Link
               href="#projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
@@ -89,6 +98,29 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
+            {/* Tombol toggle theme (pill). Tampilkan ikon tujuan switch:
+                light aktif -> tampil bulan (ke dark), dark aktif -> tampil matahari (ke light). */}
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={toggleTheme}
+              aria-label={
+                theme === "light"
+                  ? "Aktifkan mode gelap"
+                  : "Aktifkan mode terang"
+              }
+              title={
+                theme === "light"
+                  ? "Aktifkan mode gelap"
+                  : "Aktifkan mode terang"
+              }
+            >
+              <span className="theme-toggle__track">
+                <span className="theme-toggle__thumb">
+                  {theme === "light" ? "🌙" : "☀️"}
+                </span>
+              </span>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>
