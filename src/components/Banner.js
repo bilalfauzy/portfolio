@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../assets/img/bilal.jpg";
+import myImg from "../assets/img/new_profile.jpeg";
 import date from "../assets/img/calendar.svg";
 import email from "../assets/img/emailimg.svg";
 import phone from "../assets/img/callimg.svg";
@@ -81,9 +81,17 @@ export const Banner = () => {
                     Software developer with 2 years of experience specializing
                     in full stack web development, Android mobile apps, and
                     warehouse management systems. I build scalable,
-                    clean-architecture solutions across the full delivery
-                    pipeline — from REST API design and ERP integration to
-                    payment gateway and production-floor systems.
+                    clean-architecture solutions — from requirements analysis
+                    and REST API design to on-site deployment and
+                    production-floor implementation.
+                  </p>
+                  <p>
+                    My expertise covers MES and WMS development, ERP
+                    integration, RFID systems, and payment gateway
+                    implementation. I have hands-on experience leading
+                    projects, coordinating with stakeholders, and delivering
+                    end-to-end systems that run in real manufacturing
+                    environments.
                   </p>
                   <div className="banner-stack">
                     <span className="banner-stack__group">
